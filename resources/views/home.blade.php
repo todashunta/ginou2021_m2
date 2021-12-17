@@ -28,6 +28,7 @@
             <td>{{ $shop->leader }}</td>
             <td>{{ $shop->shop_flag }}</td>
             <td>{{ $shop->remarks }}</td>
+            <td><a href="/edit/{{$shop->id}}">編集</a></td>
         </tr>
         @endforeach
     </table>
