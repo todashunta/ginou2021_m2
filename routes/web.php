@@ -26,3 +26,6 @@ Route::get('logout', [LoginController::class, 'logout'])->middleware('auth')->na
 
 Route::get('/create', [AdminController::class, 'create'])->middleware('auth')->name('create');
 Route::post('/create', [AdminController::class, 'store'])->middleware('auth');
+
+Route::get('/edit/{id}', [AdminController::class, 'edit'])->middleware('auth')->name('edit');
+Route::post('/edit/{id}', [AdminController::class, 'update'])->middleware('auth');
